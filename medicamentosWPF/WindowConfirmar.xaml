@@ -1,0 +1,16 @@
+﻿<Window x:Class="medicamentosWPF.WindowConfirmar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:medicamentosWPF"
+        mc:Ignorable="d"
+        Title="WindowConfirmar" Height="445.361" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="43" Margin="35,20,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="400"/>
+        <TextBox HorizontalAlignment="Left" Height="57" Margin="35,88,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="397"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="57,184,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="367,184,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.497,0.576"/>
+
+    </Grid>
+</Window>
