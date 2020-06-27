@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:medicamentosWPF"
         mc:Ignorable="d"
         Title="Práctica: Desarrollo de Aplicaiones .NET" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="ventanaPrincipal">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="49*"/>
             <ColumnDefinition Width="743*"/>
@@ -22,7 +22,7 @@
         <RadioButton x:Name="radioButtonCemefar" Content="Cemefar" HorizontalAlignment="Left" Margin="410,191,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <Label Content="Sucursal:" HorizontalAlignment="Left" Margin="34,249,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <CheckBox x:Name="checkBoxPrimaria" Content="Primaria" HorizontalAlignment="Left" Margin="138,256,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="checkBoxSecudnaria" Content="Secundaria" HorizontalAlignment="Left" Margin="282,256,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox x:Name="checkBoxSecundaria" Content="Secundaria" HorizontalAlignment="Left" Margin="282,256,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <Button x:Name="buttonBorrar" Content="BORRAR" HorizontalAlignment="Left" Margin="63,331,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="buttonBorrar_Click"/>
         <Button x:Name="buttonConfirmar" Content="CONFIRMAR" HorizontalAlignment="Left" Margin="416,331,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.52,0.364" Grid.Column="1"/>
         <ComboBox x:Name="comboBoxTipo" HorizontalAlignment="Left" Margin="134,80,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">

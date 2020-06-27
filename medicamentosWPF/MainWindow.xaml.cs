@@ -39,7 +39,7 @@ namespace medicamentosWPF
             radioButtonCofarma.IsChecked = false;
             radioButtonEmpsephar.IsChecked = false;
             checkBoxPrimaria.IsChecked = false;
-            checkBoxSecudnaria.IsChecked = false;           
+            checkBoxSecundaria.IsChecked = false;           
         }
     }
 }
