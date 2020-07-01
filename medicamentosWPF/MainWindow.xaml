@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Práctica: Desarrollo de Aplicaiones .NET" Height="450" Width="800">
     <Grid x:Name="ventanaPrincipal">
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="49*"/>
             <ColumnDefinition Width="743*"/>
@@ -23,8 +26,8 @@
         <Label Content="Sucursal:" HorizontalAlignment="Left" Margin="34,249,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <CheckBox x:Name="checkBoxPrimaria" Content="Primaria" HorizontalAlignment="Left" Margin="138,256,0,0" VerticalAlignment="Top" Grid.Column="1" Checked="CheckBoxPrimaria_Checked"/>
         <CheckBox x:Name="checkBoxSecundaria" Content="Secundaria" HorizontalAlignment="Left" Margin="282,256,0,0" VerticalAlignment="Top" Grid.Column="1" Checked="CheckBoxSecundaria_Checked"/>
-        <Button x:Name="ButtonBorrar" Content="BORRAR" HorizontalAlignment="Left" Margin="63,331,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="ButtonBorrar_Click"/>
-        <Button x:Name="ButtonConfirmar" Content="CONFIRMAR" HorizontalAlignment="Left" Margin="416,331,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Click="ButtonConfirmar_Click"/>
+        <Button x:Name="ButtonBorrar" Content="BORRAR" HorizontalAlignment="Left" Margin="63,331,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="ButtonBorrar_Click" BorderBrush="#FFDECF3B" Foreground="#FF1D1A02"/>
+        <Button x:Name="ButtonConfirmar" Content="CONFIRMAR" HorizontalAlignment="Left" Margin="416,331,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Click="ButtonConfirmar_Click" BorderBrush="#FF5DEE1A" Foreground="#FF0B2302"/>
         <ComboBox x:Name="comboBoxTipo" HorizontalAlignment="Left" Margin="134,80,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1" SelectionChanged="ComboBoxTipo_SelectionChanged">
             <ComboBoxItem Content="analgésico" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem Content="analéptico" HorizontalAlignment="Left" Width="118"/>

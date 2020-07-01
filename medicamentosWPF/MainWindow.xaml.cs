@@ -53,10 +53,14 @@ namespace medicamentosWPF
                 MessageBox.Show("Favor de seleccionar un Tipo de medicamento");
             }
             //comprobación de una cantidad positiva
-            //else if ()
-            //{
-
-            //}
+            else if (string.IsNullOrEmpty(TextBoxCantidad.Text))
+            {
+                MessageBox.Show("Favor de escribi la cantidad del medicamento");
+            }
+            else if (Convert.ToDecimal(TextBoxCantidad.Text) <= 0)
+            {
+                MessageBox.Show("Favor de seleccionar una cantidad positiva");
+            }
             //comprobación de distribuidor
             else if ((bool)(!radioButtonCemefar.IsChecked & !radioButtonCofarma.IsChecked & !radioButtonEmpsephar.IsChecked)==true)
             {
