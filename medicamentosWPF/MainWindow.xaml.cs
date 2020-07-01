@@ -64,7 +64,6 @@ namespace medicamentosWPF
                 //this.Visibility = Visibility.Hidden;
                 this.Close();
                 objWindowConfirmar.Show();
-                string Sucursal = null;
                 string Distribuidor = null;
                 //asignar titulo a la ventana nueva
                 if ((bool)radioButtonCofarma.IsChecked)
@@ -128,14 +127,14 @@ namespace medicamentosWPF
             {
                 if (e.Key < Key.D0 | e.Key > Key.Z)// entre 34 y 43
                 {
-                    MessageBox.Show("Favor de introducir sólo caracteres numéricos");
+                    MessageBox.Show("Favor de introducir sólo caracteres alfanuméricos");
                     e.Handled = true;
                 }
             }
 
             else if (e.Key > Key.NumPad9) //> 83
             {
-                MessageBox.Show("Favor de introducir sólo caracteres numéricos 2");
+                MessageBox.Show("Favor de introducir sólo caracteres alfanuméricos");
                 e.Handled = true;
             }
         }
@@ -160,7 +159,7 @@ namespace medicamentosWPF
 
             else if (e.Key > Key.NumPad9) //> 83
             {
-                MessageBox.Show("Favor de introducir sólo caracteres numéricos 2");
+                MessageBox.Show("Favor de introducir sólo caracteres numéricos");
                 e.Handled = true;
             }
 
