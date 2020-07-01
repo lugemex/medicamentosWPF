@@ -6,11 +6,18 @@
         xmlns:local="clr-namespace:medicamentosWPF"
         mc:Ignorable="d"
         Title="WindowConfirmar" Height="445.361" Width="800">
-    <Grid>
-        <TextBox HorizontalAlignment="Left" Height="43" Margin="35,20,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="400"/>
-        <TextBox HorizontalAlignment="Left" Height="57" Margin="35,88,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="397"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="57,184,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="367,184,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.497,0.576"/>
+    <Grid x:Name="ventanaConfirmar">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="106*"/>
+            <ColumnDefinition Width="645*"/>
+            <ColumnDefinition Width="41*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TextBoxResumen" HorizontalAlignment="Left" Height="43" Margin="43,20,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="400" Grid.Column="1" TextChanged="TextBoxResumen_TextChanged"/>
+        <TextBox x:Name="TextBoxDireccion" HorizontalAlignment="Left" Height="57" Margin="43,88,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="397" Grid.Column="1" TextChanged="TextBoxDireccion_TextChanged"/>
+        <Button x:Name="Cancelar" Content="CANCELAR" HorizontalAlignment="Left" Margin="57,184,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Click="Cancelar_Click"/>
+        <Button x:Name="Enviar" Content="Enviar" HorizontalAlignment="Left" Margin="261.206,184,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Click="Enviar_Click"/>
+        <Label x:Name="labelResumen" Content="Resume:n:" HorizontalAlignment="Left" Margin="39,31,0,0" VerticalAlignment="Top"/>
+        <Label Content="Dirección:" HorizontalAlignment="Left" Margin="39,101,0,0" VerticalAlignment="Top" Width="74" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

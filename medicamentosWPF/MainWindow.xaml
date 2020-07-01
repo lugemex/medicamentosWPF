@@ -12,20 +12,20 @@
             <ColumnDefinition Width="743*"/>
         </Grid.ColumnDefinitions>
         <Label Content="Medicamento:" HorizontalAlignment="Left" Margin="4,31,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <TextBox x:Name="textBoxMedicamento" HorizontalAlignment="Left" Height="23" Margin="134,33,0,0" TextWrapping="Wrap" Text="Escribe el nombre del medicamento" VerticalAlignment="Top" Width="228" Grid.Column="1"/>
+        <TextBox x:Name="TextBoxMedicamento" HorizontalAlignment="Left" Height="23" Margin="134,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" Grid.Column="1" KeyDown="TextBoxMedicamento_KeyDown"/>
         <Label Content="Tipo:" HorizontalAlignment="Left" Margin="54,72,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="30,122,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <TextBox x:Name="textBoxCantidad" HorizontalAlignment="Left" Height="23" Margin="135,128,0,0" TextWrapping="Wrap" Text="Escribe sólo números" VerticalAlignment="Top" Width="150" Grid.Column="1" TextChanged="textBoxCantidad_TextChanged"/>
+        <TextBox x:Name="TextBoxCantidad" HorizontalAlignment="Left" Height="23" Margin="135,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Grid.Column="1" KeyDown="TextBoxCantidad_KeyDown"/>
         <Label Content="Distribuidor:" HorizontalAlignment="Left" Margin="15,187,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.079,0.115" Grid.Column="1"/>
-        <RadioButton x:Name="radioButtonCofarma" Content="Cofarma" HorizontalAlignment="Left" Margin="135,191,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <RadioButton x:Name="radioButtonEmpsephar" Content="Empsephar" HorizontalAlignment="Left" Margin="279,191,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <RadioButton x:Name="radioButtonCemefar" Content="Cemefar" HorizontalAlignment="Left" Margin="410,191,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <RadioButton x:Name="radioButtonCofarma" GroupName="Distribuidor" Content="Cofarma" HorizontalAlignment="Left" Margin="135,191,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <RadioButton x:Name="radioButtonEmpsephar" GroupName="Distribuidor" Content="Empsephar" HorizontalAlignment="Left" Margin="279,191,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <RadioButton x:Name="radioButtonCemefar" GroupName="Distribuidor" Content="Cemefar" HorizontalAlignment="Left" Margin="410,191,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <Label Content="Sucursal:" HorizontalAlignment="Left" Margin="34,249,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="checkBoxPrimaria" Content="Primaria" HorizontalAlignment="Left" Margin="138,256,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="checkBoxSecundaria" Content="Secundaria" HorizontalAlignment="Left" Margin="282,256,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Button x:Name="buttonBorrar" Content="BORRAR" HorizontalAlignment="Left" Margin="63,331,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="buttonBorrar_Click"/>
-        <Button x:Name="buttonConfirmar" Content="CONFIRMAR" HorizontalAlignment="Left" Margin="416,331,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.52,0.364" Grid.Column="1"/>
-        <ComboBox x:Name="comboBoxTipo" HorizontalAlignment="Left" Margin="134,80,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">
+        <CheckBox x:Name="checkBoxPrimaria" Content="Primaria" HorizontalAlignment="Left" Margin="138,256,0,0" VerticalAlignment="Top" Grid.Column="1" Checked="CheckBoxPrimaria_Checked"/>
+        <CheckBox x:Name="checkBoxSecundaria" Content="Secundaria" HorizontalAlignment="Left" Margin="282,256,0,0" VerticalAlignment="Top" Grid.Column="1" Checked="CheckBoxSecundaria_Checked"/>
+        <Button x:Name="ButtonBorrar" Content="BORRAR" HorizontalAlignment="Left" Margin="63,331,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="ButtonBorrar_Click"/>
+        <Button x:Name="ButtonConfirmar" Content="CONFIRMAR" HorizontalAlignment="Left" Margin="416,331,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Click="ButtonConfirmar_Click"/>
+        <ComboBox x:Name="comboBoxTipo" HorizontalAlignment="Left" Margin="134,80,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1" SelectionChanged="ComboBoxTipo_SelectionChanged">
             <ComboBoxItem Content="analgésico" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem Content="analéptico" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem Content="anestésico" HorizontalAlignment="Left" Width="118"/>
